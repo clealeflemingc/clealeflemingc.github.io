@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<!-- The three items I choose to include in assignment 1 are: 5 or more images, horizontal navigation bars, 2+ external links -->
 <html>
 <head>
 <title>Home</title>
@@ -9,63 +10,133 @@ Project 2: Personal Webpage
 Page: index.html (Home/Default)
 Last Modified: 13-Oct-20>
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 .pagewidth {
-	width: 1000px;
-	background-color: #fffaf0;
-	position: relative;
-	left: 200px;}
+	width: 70%;
+	background-color: #f5f5f5;
+	margin-left:200px;}
 	
-/*page layout adapted from https://www.w3schools.com/css/css_website_layout.asp for a three column design with horizontal nav bar*/
-/*background colour pallet inspired by https://www.littlenookstudio.com/ and found colour codes with webapp https://imagecolorpicker.com/en/*/
+/*page layout adapted from https://www.w3schools.com/css/css_website_layout.asp for header and footer with horizontal navigation bar*/
+/*background colour pallet inspired by "Natural & Earthy" palette on https://visme.co/blog/website-color-schemes/ and accent colours found using webapp https://imagecolorpicker.com/en/*/
 
 /*Setting up the header section with subtitle */
 	.header {
 		padding: 30px;
-		background-color: #dcccb5;}
-	h1 {text-align: center;
+		background-color: #daad86;
+		border-top: 2px #1e1c1c solid;
+		border-bottom: 2px #1e1c1c solid;}
+	h1 {
+		text-align: center;
 		font-family: lucida console;
-		font-size: 40px;
-		color: #1e1c1c;}
+		font-size:65px;
+		color: #1e1c1c;
+		font-weight: normal;
+		margin-block-start: 15px;
+		margin-block-end: 15px;}
 	.subtitle {
 		text-align:center;
 		font-family: lucida console;
-		font-size: 15px;
+		font-size: 20px;
 		color: #1e1c1c;
+		margin-block-start: 25px;
 		}
 
-/*Setting up the nav bar section*/
+/*Setting up the navigation bar section*/
 	/* Style the nav bar */
 	.navbar {
 	  overflow: hidden;
-	  background-color: #5c6853;
-	  }
+	  background-color: #659dbd;}
 
 	/* Style the nav bar links */
 	.navbar a {
 		float: left;
-		curser: pointer;
-		color: #ffffff;
+		color: #1e1c1c;
 		display: inline-block;
-		font-family: arial;
-		padding: 10px 50px;
+		font-family: lucida console;
+		font-size: 20px;
+		padding: 10px;
+		width: 48.4%;
 		text-align: center;
-		text-decoration: none;}
+		text-decoration: none;
+		}
 
 	/* Change color on hover */
 	.navbar a:hover {
 	  background-color: #ffffff;
-	  color: #5c6853;
+	  color: #1e1c1c;
 	}
 
+
+/*body text styling adapted from Yoga with Adrienne website https://yogawithadriene.com/adriene-mishler/ */
+	p {
+		font-family: 'acumin-pro', sans-serif;
+		font-size: 18px;
+		font-weight: 200;
+		line-height: 1.625;
+		color:#1e1c1c;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-block-start: 25px;
+		margin-block-end: 25px;}
+
+h2 {
+	font-family: lucida console;
+	font-size: 24px;
+	font-weight: 500;
+	color: #1e1c1c;
+	margin-block-start: 0.5cm;
+	margin-left: 10px;
+	margin-inline-end: 1px;}
+
+/*Styleing the footer following https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_footer */
+/* Added line breaks in footer following css <span> quidance from https://www.educative.io/edpresso/how-to-add-a-line-break-using-css-->*/
+	.footer {
+	  background-color: #f5f5f5;
+	  padding: 10px;
+	  text-align: center;
+	  color: #1e1c1c;
+	  border-top: 1px solid #8d8741;}
+
+	h3 {
+		font-family: lucida console;
+		font-size: 20px;
+		font-weight: 500;
+		color: #1e1c1c;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-block-start: 15px;
+		margin-block-end: 15px;}
+
+	.foot.text{
+		font-family: lucida console;
+		font-size: 12px;
+		font-weight: 500;
+		color: #1e1c1c;}
+		
+	#footerOR::before{
+		content: "\a";
+		white-space: pre;}	
+		
+	#footerOR::after{
+		content: "\a";
+		white-space: pre;}
+	.footer a{
+		color: #8d8741;
+		display: inline-block;
+		font-family: lucida console;
+		font-size: 12px;
+		text-decoration: none;
+		font-weight: 900}
+	
 </style>
 </head>
-<!-- The three items I choose to include are: 5 or more images, horizontal navigation bars, 2+ external links -->
 
 <div class="pagewidth">
 <body>
 <div class="header"> <h1>Carina T. Leale</h1>
-<div class="subtitle"><p> Aspiring Goescientist, Outdoors Lover, & Snack Hound.<p></div> </div>
+<div class="subtitle"> Aspiring Goescientist, Outdoors Lover & Snack Hound.</div> </div>
 
 <!-- navigation bar to Experiences Page and Passions Pages with relative links-->
 <div class = "navbar">
@@ -73,22 +144,22 @@ Last Modified: 13-Oct-20>
 <a href="page3_passions.html">Passions</a>
 </div>
 
+
 <h2>About Me</h2>
 <!-- link to head shot, and make it float with the text -->
+<p>I am an aspiring environmental geoscientists working, learning, and exploring on the north shore of Lake Superior. I grew up in the small northern Ontario community of Nipigon located at the mouth of the Nipigon River. My father was a forester and my mother a fisheries biologist. Together they shared a love for science and the outdoors, both in their careers and at home. I beleive the positive exposure to natural sciences and outdoor activities helped shape the education paths I chose and my current career aspirations. I am inquisitive by nature, and am passionate about all things outdoors. </p>
 
-<p>I am an aspiring environmental geoscientists working, learning, and exploring on the north shore of Lake Superior. I grew up in the small northern Ontario community of Nipigon located at the mouth of the Nipigon River . My father was a forester and my mother a fisheries biologist. Together they shared a love for science and the outdoors, both in their careers and at home. I beleive the positive exposure to natural sciences and outdoor activities helped shape the education paths I chose and my current career aspirations. I am inquisitive by nature, and am passionate about all things outdoors. </p>
+<p><img src ="images/Carina_LkPowel.jpg" alt="Carina, Lake Powel" style="float:right; padding-left: 20px; padding-right: 20px;" width="425" height="300"> I beagn my post-secondary education at the University of Guelph studying Environmental Geoscience and Geomatics in 2013 with the hope that I would at some point return to northern Ontario with my newly learned skills and build my career. However, by January 2015 I had had started to miss "Superior cCuntry" and the ample opportunties to explore in northern Ontario, so I changed education paths and transfered into the Earth Science program at Lakehead University in Thunder Bay. Within the close-knit Department of Geology I completed courses such in environmental geochemistry, sustainable natural resource management, environmental sustainability, mineralogy, structural geology, and groundwater management. Case studies further focused on various geoscientific theories and topics. In 2018 I graduated with first class standing from Lakehead University with an Honours Bachelour of Environmental Science, majoring in Earth Science. </p>
 
-<p>My first attempt at post-secondary education brought me to the University of Guelph to study Environmental Geoscience and Geomatics in 2013 with the hope that I would at some point return to northern Ontario with my newly learned skills to build my career. However, by January 2015 I had begun to miss "Superior country" and the ample opportunty to explore that you have in northern Ontario, so I changed education paths and transfered into the Earth Science program at Lakehead University in Thunder Bay. Within the Department of Geology I completed courses such in environmental geochemistry, sustainable natural resource management, environmental sustainability, mineralogy, structural geology, and groundwater management. Case studies further focused on various geoscientific theories and topics. In 2018 I graduated with first class standing from Lakehead University with an Honours Bachelour of Environmental Science, majoring in Earth Science. </p>
+<p>For the past two and a half years I have worked as an environmental scientist in the environmental consulting industry in northwestern Ontario where I was responsible for conducting annual water quality and hydrogeological assessments, as well as providing technical support on a range of environmental field programs. During this time, I gained an appreciation for the value and usage of GIS-based data management systems and wished to further follow my interests in geomatics. So, in September of 2020 I made the decision to return to school and am currently persuring a post-graduate diploma in Geographic Information Systems (GIS), learning remotely through Fleming College. I hope to one day bring my new found skills in GIS to  earth science projects in the north! </p>
 
-<p>For the past two and a half years I worked as an environmental scientist in the environmental consulting industry in northwestern Ontario where I was responsible for conducting annual water quality and hydrogeological assessments, as well as providing technical support on a range of environmental field programs. During this time, I gained an appreciation for the value and usage of GIS-based data management systems and wished to follow my interests in geomatics. So, in September of 2020 I made the decision to further my education and am currently persuring a post-graduate diploma in Geographic Information Systems (GIS) remotely through Fleming College. I hope to one day bring my new found skills in GIS to future earth science projects! </p>
 
-<h2>Details</h2>
-<p>Age: 25; Location: Thunder Bay, ON; Licenses: Geoscientist-in-Training (G.I.T.) with the Professional Geoscientists of Ontario (PGO) </p>
+<div class="footer">
+	<h3>Contact</h3>
+	<div class="foot text">Connect with me on <a href ="https://www.linkedin.com/in/carina-leale42860/">LinkedIn</a>
+	<span id="footerOR"> OR </span> email me at: carina.leale@flemingcollege.ca </div> 
+</div>
 
-<h3>Contact</h3>
-<!-- External link to LinkedIN webpage-->
-<p>Connect with me on LinkedIN<p>
-<p>email: carina.leale@flemingcollege.ca</p>
 </body> 
 </div>
 </html>
