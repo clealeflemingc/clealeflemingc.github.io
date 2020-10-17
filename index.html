@@ -8,20 +8,70 @@ GEOM 101: Web Design and Programming
 Project 2: Personal Webpage
 Page: index.html (Home/Default)
 Last Modified: 13-Oct-20>
+
 <style>
+.pagewidth {
+	width: 1000px;
+	background-color: #fffaf0;
+	position: relative;
+	left: 200px;}
+	
+/*page layout adapted from https://www.w3schools.com/css/css_website_layout.asp for a three column design with horizontal nav bar*/
+/*background colour pallet inspired by https://www.littlenookstudio.com/ and found colour codes with webapp https://imagecolorpicker.com/en/*/
+
+/*Setting up the header section with subtitle */
+	.header {
+		padding: 30px;
+		background-color: #dcccb5;}
+	h1 {text-align: center;
+		font-family: lucida console;
+		font-size: 40px;
+		color: #1e1c1c;}
+	.subtitle {
+		text-align:center;
+		font-family: lucida console;
+		font-size: 15px;
+		color: #1e1c1c;
+		}
+
+/*Setting up the nav bar section*/
+	/* Style the nav bar */
+	.navbar {
+	  overflow: hidden;
+	  background-color: #5c6853;
+	  }
+
+	/* Style the nav bar links */
+	.navbar a {
+		float: left;
+		curser: pointer;
+		color: #ffffff;
+		display: inline-block;
+		font-family: arial;
+		padding: 10px 50px;
+		text-align: center;
+		text-decoration: none;}
+
+	/* Change color on hover */
+	.navbar a:hover {
+	  background-color: #ffffff;
+	  color: #5c6853;
+	}
 
 </style>
-<!-- The three items I choose to include are: 5 or more images, horizontal navigation bars, 2+ external links -->
 </head>
+<!-- The three items I choose to include are: 5 or more images, horizontal navigation bars, 2+ external links -->
 
-
+<div class="pagewidth">
 <body>
-<h1>Carina T. Leale</h1>
-<p> Aspiring Goescientist, Outdoors Lover, & Snack Hound. </p>
+<div class="header"> <h1>Carina T. Leale</h1>
+<div class="subtitle"><p> Aspiring Goescientist, Outdoors Lover, & Snack Hound.<p></div> </div>
 
-<!-- navigation bar to Experiences Page and Passions Pages-->
+<!-- navigation bar to Experiences Page and Passions Pages with relative links-->
+<div class = "navbar">
 <a href="page2_experiences.html">Experiences</a>
 <a href="page3_passions.html">Passions</a>
+</div>
 
 <h2>About Me</h2>
 <!-- link to head shot, and make it float with the text -->
@@ -32,12 +82,13 @@ Last Modified: 13-Oct-20>
 
 <p>For the past two and a half years I worked as an environmental scientist in the environmental consulting industry in northwestern Ontario where I was responsible for conducting annual water quality and hydrogeological assessments, as well as providing technical support on a range of environmental field programs. During this time, I gained an appreciation for the value and usage of GIS-based data management systems and wished to follow my interests in geomatics. So, in September of 2020 I made the decision to further my education and am currently persuring a post-graduate diploma in Geographic Information Systems (GIS) remotely through Fleming College. I hope to one day bring my new found skills in GIS to future earth science projects! </p>
 
-<h3>Details</h3>
+<h2>Details</h2>
 <p>Age: 25; Location: Thunder Bay, ON; Licenses: Geoscientist-in-Training (G.I.T.) with the Professional Geoscientists of Ontario (PGO) </p>
 
-<h4>Contact</h4>
+<h3>Contact</h3>
 <!-- External link to LinkedIN webpage-->
 <p>Connect with me on LinkedIN<p>
 <p>email: carina.leale@flemingcollege.ca</p>
-</body>
+</body> 
+</div>
 </html>
