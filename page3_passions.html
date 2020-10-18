@@ -1,245 +1,58 @@
 <!DOCTYPE html>
+
 <!-- The three items I choose to include are: 5 or more images, horizontal navigation bars, 2+ external links -->
+
 <html>
-<head>
-<title>Passions</title>
-<meta
-GEOM 101: Web Design and Programming
-Project 2: Personal Webpage
-Page: page2_experiences.html 
-Last Modified: 13-Oct-20>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.pagewidth {
-	width: 70%;
-	background-color: #f5f5f5;
-	margin-left:200px;}
-	
-/*page layout adapted from https://www.w3schools.com/css/css_website_layout.asp for header and footer with horizontal navigation bar*/
-/*background colour pallet inspired by "Natural & Earthy" palette on https://visme.co/blog/website-color-schemes/ and accent colours found using webapp https://imagecolorpicker.com/en/*/
-
-/*Setting up the header section with subtitle */
-	.header {
-		padding: 30px;
-		background-color: #daad86;
-		border-top: 2px #1e1c1c solid;
-		border-bottom: 2px #1e1c1c solid;}
-	h1 {
-		text-align: center;
-		font-family: lucida console;
-		font-size:65px;
-		color: #1e1c1c;
-		font-weight: normal;
-		margin-block-start: 15px;
-		margin-block-end: 15px;}
-	.subtitle {
-		text-align:center;
-		font-family: lucida console;
-		font-size: 20px;
-		color: #1e1c1c;
-		margin-block-start: 25px;
-		}
-
-/*Setting up the navigation bar section*/
-	/* Style the nav bar */
-	.navbar {
-	  overflow: hidden;
-	  background-color: #aac5e0;}
-
-	/* Style the nav bar links */
-	.navbar a {
-		float: left;
-		color: #1e1c1c;
-		display: inline-block;
-		font-family: lucida console;
-		font-size: 20px;
-		padding: 10px;
-		width: 48.4%;
-		text-align: center;
-		text-decoration: none;
-		}
-
-	/* Change color on hover */
-	.navbar a:hover {
-	  background-color: #ffffff;
-	  color: #1e1c1c;
-	}
-
-/* CSS image styling coding template from https://www.w3schools.com/css/css3_images.asp */
-	img.image1 {
-		float:right; 
-		padding-left: 20px;
-		padding-right: 20px;
-		width: 425px;
-		height: 300px;}
-	img.image2 {
-		float:right; 
-		padding-left: 20px;
-		padding-right: 35px;
-		width: 400px;
-		height: 300px;}
-
-/*body text styling adapted from Yoga with Adrienne website https://yogawithadriene.com/adriene-mishler/ */
-	p {
-		font-family: 'acumin-pro', sans-serif;
-		font-size: 18px;
-		font-weight: 200;
-		line-height: 1.625;
-		color:#1e1c1c;
-		margin-left: 35px;
-		margin-right: 35px;
-		margin-block-start: 25px;
-		margin-block-end: 25px;}
-
-h2 {
-	font-family: lucida console;
-	font-size: 24px;
-	font-weight: 900;
-	color: #1e1c1c;
-	margin-block-start: 0.5cm;
-	margin-left: 30px;
-	margin-inline-end: 1px;}
-
-/*Styleing the footer following https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_footer */
-/* Added line breaks in footer following css <span> quidance from https://www.educative.io/edpresso/how-to-add-a-line-break-using-css-->*/
-	.footer {
-	  background-color: #f5f5f5;
-	  padding: 10px;
-	  text-align: center;
-	  color: #1e1c1c;
-	  border-top: 2px solid #8d8741;}
-
-	h3 {
-		font-family: lucida console;
-		font-size: 20px;
-		font-weight: 500;
-		color: #1e1c1c;
-		margin-top: 25px;
-		margin-bottom: 25px;
-		margin-block-start: 15px;
-		margin-block-end: 15px;}
-
-	.foot.text{
-		font-family: lucida console;
-		font-size: 12px;
-		font-weight: 500;
-		color: #1e1c1c;}
-		
-	#footerOR::before{
-		content: "\a";
-		white-space: pre;}	
-		
-	#footerOR::after{
-		content: "\a";
-		white-space: pre;}
-	.footer a{
-		color: #8d8741;
-		display: inline-block;
-		font-family: lucida console;
-		font-size: 12px;
-		text-decoration: none;
-		font-weight: 900}
-		
-/*text styling for Experiences Page */
-	h4 {
-		font-family: 'acumin-pro', sans-serif;
-		font-size: 18px;
-		font-weight: 400;
-		color: #1e1c1c;
-		margin-left: 30px;
-		margin-bottom: 25px;
-		margin-block-start: 10px;
-		margin-block-end: 10px;}
-	.exptext {
-		font-family: 'acumin-pro', sans-serif;
-		font-size: 18px;
-		font-weight: 200;
-		color: #1e1c1c;
-		margin-left: 30px;
-		margin-right: 30px;
-		margin-bottom: 25px;
-		margin-block-start: 10px;
-		margin-block-end: 20px;}
-		
-/* list formatting adapted from https://www.w3schools.com/css/css_list.asp */	
-	ul.experienceslist {
-	list-style-type: circle;
-	font-family: 'acumin-pro', sans-serif;
-	font-size: 18px;
-	font-weight: 200;
-	color: #1e1c1c;
-	margin-left: 10px;
-	margin-right: 30px;
-	margin-block-start: 10px;
-	margin-block-end: 20px;
-	}
-			  
-			  
-	p a{
-	color: #8d8741;
-	display: inline-block;
-	font-family: lucida console;
-	font-size: 18px;
-	text-decoration: none;
-	font-weight: 900}
-
-	/* slideshow HTML adapted from https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required*/
-	.fling-minislide {width:100%; height:0px; padding-bottom: 70%; overflow:hidden; position:relative;}
-	.fling-minislide {width:80%; height:0px; padding-left: 10%; overflow:hidden; position:relative;}
-	.fling-minislide img{ position:absolute; animation:fling-minislide 30s infinite; opacity:0; width: 100%; height: auto;}
-
-	@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
-	.fling-minislide img:nth-child(6){animation-delay:0s;}
-	.fling-minislide img:nth-child(5){animation-delay:5s;}
-	.fling-minislide img:nth-child(4){animation-delay:10s;}
-	.fling-minislide img:nth-child(3){animation-delay:15s;}
-	.fling-minislide img:nth-child(2){animation-delay:20s;}
-	.fling-minislide img:nth-child(1){animation-delay:25s;}
-
-</style>
-</head>
+	<head>
+		<title>Passions</title>
+		<meta
+		GEOM 101: Web Design and Programming
+		Project 2: Personal Webpage
+		Page: page2_experiences.html 
+		Last Modified: 18-Oct-20>
+		<!-- Page set up for responsive screen, and link below to external style sheet "mystyles.css"-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="mystyles.css">
+	</head>
 
 
-<body>
-<div class="pagewidth">
-<div class="header"> <h1>Passions</h1>
-<div class="subtitle"> <i>“There is no passion to be found playing small—in settling for a life that is less than the one you are capable of living.”</i> - Nelson Mandela</div> </div>
+	<body>
+		<div class="pagewidth">
+			<!--Adding a header section modified from: https://www.w3schools.com/css/css_website_layout.asp-->
+			<div class="header"> <h1>Passions</h1>
+			<div class="subtitle"> <i>“There is no passion to be found playing small—in settling for a life that is less than the one you are capable of living.”</i> - Nelson Mandela</div> </div>
 
 
-<!-- navigation bar to Home and Experiences Pages with relative links-->
-<div class = "navbar">
-<a href="index.html">About Me</a>
-<a href="page2_Experiences.html">Experiences</a>
-</div>
+			<!-- Navigation bar to About Me and Passions Pages with relative links, modified from: https://www.w3schools.com/css/css_navbar_horizontal.asp -->
+			<div class = "navbar">
+			<a href="index.html">About Me</a>
+			<a href="page2_Experiences.html">Experiences</a>
+			</div>
 
-<h2>Embrace all the Potentials!</h2>
-	<!--definition derived from: https://en.wikipedia.org/wiki/Multipotentiality -->
-	<p><b>Multipotenitalite:</b> a person who has many different interests and creative persuits in life. Multipotenitalites have no "one true calling" and thrive on learning, exploring, and mastering new skills.</p>
-	<p>Call me a hobbiest, generalist, or multipotentialite, but for as long as I can remember I have always dabbled in a wide range of activites. These "hobbies", which I like to think of more as "passions", inlcude outdoor activities such as hiking, fishing, hunting, snowshoeing, skiing (I could go on...), as well as natural sciences, travel, exercise, art, cooking, and gardening. If anything is certian, I am positive this list will only grow longer with time! I beleive it is ok to embrace the potentials and to refuse to choose just a handfull of hobbies, interests or passions.</p> 
-	<p>So, if you're like me and your head is often in the clouds thinking about all YOUR passions and the potentials that come with them, take a listen to my favourite song <a href ="https://www.youtube.com/watch?v=x8ccDb6n5Wg"> "Old Pine" </a> by Ben Howard <!-- link to youtube -->, which I find always helps bring me back to reality.</p>
-	<p>If you would like to see some of my latest endeavers and adventures, check out the photo slideshow below.</p>
+			<h2>Embrace all the Potentials!</h2>
+				<!--Definition of mulitpotentialite derived from: https://en.wikipedia.org/wiki/Multipotentiality -->
+				<p><b>Multipotenitalite:</b> a person who has many different interests and creative persuits in life. Multipotenitalites have no "one true calling" and thrive on learning, exploring, and mastering new skills.</p>
+				<p>Call me a hobbiest, generalist, or multipotentialite, but for as long as I can remember I have always dabbled in a wide range of activites. These "hobbies", which I like to think of more as "passions", inlcude outdoor activities such as hiking, fishing, hunting, snowshoeing, skiing (I could go on...), as well as natural sciences, travel, exercise, art, cooking, and gardening. If anything is certian, I am positive this list will only grow longer with time! I beleive it is ok to embrace the potentials and to refuse to choose just a handfull of hobbies, interests or passions.</p> 
+				<p>So, if you're like me and your head is often in the clouds thinking about all YOUR passions and the potentials that come with them, take a listen to my favourite song <a href ="https://www.youtube.com/watch?v=x8ccDb6n5Wg"> "Old Pine" </a> by Ben Howard <!--Inserting an in-line external link to youtube modified from: https://www.w3schools.com/html/html_links.asp-->, which I find always helps bring me back to reality.</p>
+				<p>If you would like to see some of my latest endeavers and adventures, check out the photo slideshow below.</p>
 
-<!-- slideshow HTML adapted from https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required-->
+			<!-- Slideshow HTML adapted from: https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required-->
+			<div class="fling-minislide">
+				<img src="image/yosemite1.jpg" alt="Slide 6" />
+				<img src="image/stlucia3.jpg" alt="Slide 5" />
+				<img src="image/ontariosummer4.jpg" alt="Slide 4" />
+				<img src="image/mojave2.jpg" alt="Slide 3" />
+				<img src="image/dunes2.jpg" alt="Slide 2" />
+				<img src="image/bigsur1.jpg" alt="Slide 1" />
+			</div>
 
-
-<div class="fling-minislide">
-	<img src="/image/yosemite1.jpg" alt="Slide 6" />
-	<img src="/image/stlucia3.jpg" alt="Slide 5" />
-	<img src="/image/ontariosummer4.jpg" alt="Slide 4" />
-	<img src="/image/mojave2.jpg" alt="Slide 3" />
-	<img src="/image/dunes2.jpg" alt="Slide 2" />
-	<img src="/image/bigsur1.jpg" alt="Slide 1" />
-</div>
-
-
-<div class="footer">
-	<h3>Contact</h3>
-	<div class="foot text">Connect with me on <a href ="https://www.linkedin.com/in/carina-leale42860/">LinkedIn</a>
-	<span id="footerOR"> OR </span> email me at: carina.leale@flemingcollege.ca </div> 
-</div>
-
-</div>
-</body>
+			<!-- Adding a footer section modified from: https://www.w3schools.com/css/css_website_layout.asp; adding external links with full paths modified from: https://www.w3schools.com/html/html_links.asp-->
+			<div class="footer">
+				<h3>Contact</h3>
+				<div class="foot text">Connect with me on <a href ="https://www.linkedin.com/in/carina-leale42860/">LinkedIn</a>
+				<span id="footerOR"> OR </span> email me at: carina.leale@flemingcollege.ca </div> 
+			</div>
+		</div>
+	</body>
 
 </html>
