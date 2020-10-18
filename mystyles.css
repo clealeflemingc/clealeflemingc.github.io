@@ -1,14 +1,18 @@
-/*Carina Leale, Assignment2 Style Sheet*/
+/*Carina Leale; Assignment2; Style Sheet*/
+/*The three items I choose to include in assignment 1 are: 5 or more images, horizontal navigation bars, 2+ external links*/
 
+
+/*page layout adapted from https://www.w3schools.com/css/css_website_layout.asp for header and footer with horizontal navigation bar*/
+/*Website colour pallet inspired by "Natural & Earthy" palette on https://visme.co/blog/website-color-schemes/ and accent colours found using webapp https://imagecolorpicker.com/en/*/
+
+/*Setting up the page format*/
 .pagewidth {
 	width: 70%;
 	background-color: #f5f5f5;
 	margin-left:200px;}
-	
-/*page layout adapted from https://www.w3schools.com/css/css_website_layout.asp for header and footer with horizontal navigation bar*/
-/*background colour pallet inspired by "Natural & Earthy" palette on https://visme.co/blog/website-color-schemes/ and accent colours found using webapp https://imagecolorpicker.com/en/*/
 
-/*Setting up the header section with subtitle */
+
+/*Setting up the header section with subtitle, adapted from: https://www.w3schools.com/css/css_website_layout.asp*/
 	.header {
 		padding: 30px;
 		background-color: #daad86;
@@ -27,10 +31,9 @@
 		font-family: lucida console;
 		font-size: 20px;
 		color: #1e1c1c;
-		margin-block-start: 25px;
-		}
+		margin-block-start: 25px;}
 
-/*Setting up the navigation bar section*/
+/*Setting up the navigation bar section modified from: https://www.w3schools.com/css/css_navbar_horizontal.asp*/
 	/* Style the nav bar */
 	.navbar {
 	  overflow: hidden;
@@ -44,18 +47,16 @@
 		font-family: lucida console;
 		font-size: 20px;
 		padding: 10px;
-		width: 48.4%;
+		width: 20%;
 		text-align: center;
-		text-decoration: none;
-		}
+		text-decoration: none;}
 
 	/* Change color on hover */
 	.navbar a:hover {
-	  background-color: #ffffff;
-	  color: #1e1c1c;
-	}
+	  background-color: #1e1c1c;
+	  color:#aac5e0;}
 
-/* CSS image styling coding template from https://www.w3schools.com/css/css3_images.asp */
+/*CSS image styling coding adapted from: https://www.w3schools.com/css/css3_images.asp*/
 	img.image1 {
 		float:right; 
 		padding-left: 20px;
@@ -69,7 +70,7 @@
 		width: 400px;
 		height: 300px;}
 
-/*body text styling adapted from Yoga with Adrienne website https://yogawithadriene.com/adriene-mishler/ */
+/*Body text font styling inspired from: Yoga with Adrienne website https://yogawithadriene.com/adriene-mishler/ */
 	p {
 		font-family: 'acumin-pro', sans-serif;
 		font-size: 18px;
@@ -81,24 +82,22 @@
 		margin-block-start: 25px;
 		margin-block-end: 25px;}
 
-h2 {
-	font-family: lucida console;
-	font-size: 24px;
-	font-weight: 900;
-	color: #1e1c1c;
-	margin-block-start: 0.5cm;
-	margin-left: 30px;
-	margin-inline-end: 1px;}
+	h2 {
+		font-family: lucida console;
+		font-size: 24px;
+		font-weight: 900;
+		color: #1e1c1c;
+		margin-block-start: 0.5cm;
+		margin-left: 30px;
+		margin-inline-end: 1px;}
 
-/*Styleing the footer following https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_footer */
-/* Added line breaks in footer following css <span> quidance from https://www.educative.io/edpresso/how-to-add-a-line-break-using-css-->*/
+/*Styling the footer modifed from: https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_footer */
 	.footer {
 	  background-color: #f5f5f5;
 	  padding: 10px;
 	  text-align: center;
 	  color: #1e1c1c;
 	  border-top: 2px solid #8d8741;}
-
 	h3 {
 		font-family: lucida console;
 		font-size: 20px;
@@ -108,13 +107,13 @@ h2 {
 		margin-bottom: 25px;
 		margin-block-start: 15px;
 		margin-block-end: 15px;}
-
 	.foot.text{
 		font-family: lucida console;
 		font-size: 12px;
 		font-weight: 500;
 		color: #1e1c1c;}
 		
+/*Added line breaks in footer following css <span> quidance from: https://www.educative.io/edpresso/how-to-add-a-line-break-using-css-->*/
 	#footerOR::before{
 		content: "\a";
 		white-space: pre;}	
@@ -130,7 +129,7 @@ h2 {
 		text-decoration: none;
 		font-weight: 900}
 		
-/*text styling for Experiences Page */
+/*Additional text styling for Experiences Page*/
 	h4 {
 		font-family: 'acumin-pro', sans-serif;
 		font-size: 18px;
@@ -151,7 +150,7 @@ h2 {
 		margin-block-start: 10px;
 		margin-block-end: 20px;}
 		
-/* list formatting adapted from https://www.w3schools.com/css/css_list.asp */	
+/*CSS list formatting adapted from: https://www.w3schools.com/css/css_list.asp */	
 	ul.experienceslist {
 	list-style-type: circle;
 	font-family: 'acumin-pro', sans-serif;
@@ -161,10 +160,8 @@ h2 {
 	margin-left: 10px;
 	margin-right: 30px;
 	margin-block-start: 10px;
-	margin-block-end: 20px;
-	}
-			  
-			  
+	margin-block-end: 20px;}
+			  		  
 	p a{
 	color: #8d8741;
 	display: inline-block;
@@ -173,7 +170,7 @@ h2 {
 	text-decoration: none;
 	font-weight: 900}
 
-	/* slideshow HTML adapted from https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required*/
+/*Image slideshow adapted from: https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required*/
 	.fling-minislide {width:100%; height:0px; padding-bottom: 70%; overflow:hidden; position:relative;}
 	.fling-minislide {width:80%; height:0px; padding-left: 10%; overflow:hidden; position:relative;}
 	.fling-minislide img{ position:absolute; animation:fling-minislide 30s infinite; opacity:0; width: 100%; height: auto;}
@@ -185,4 +182,3 @@ h2 {
 	.fling-minislide img:nth-child(3){animation-delay:15s;}
 	.fling-minislide img:nth-child(2){animation-delay:20s;}
 	.fling-minislide img:nth-child(1){animation-delay:25s;}
-
