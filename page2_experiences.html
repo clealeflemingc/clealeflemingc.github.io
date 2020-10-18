@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- The three items I choose to include are: 5 or more images, horizontal navigation bars, 2+ external links -->
 <html>
 <head>
 <title>Experiences</title>
@@ -8,55 +8,247 @@ GEOM 101: Web Design and Programming
 Project 2: Personal Webpage
 Page: page2_experiences.html 
 Last Modified: 13-Oct-20>
-<style>
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.pagewidth {
+	width: 70%;
+	background-color: #f5f5f5;
+	margin-left:200px;}
+	
+/*page layout adapted from https://www.w3schools.com/css/css_website_layout.asp for header and footer with horizontal navigation bar*/
+/*background colour pallet inspired by "Natural & Earthy" palette on https://visme.co/blog/website-color-schemes/ and accent colours found using webapp https://imagecolorpicker.com/en/*/
+
+/*Setting up the header section with subtitle */
+	.header {
+		padding: 30px;
+		background-color: #daad86;
+		border-top: 2px #1e1c1c solid;
+		border-bottom: 2px #1e1c1c solid;}
+	h1 {
+		text-align: center;
+		font-family: lucida console;
+		font-size:65px;
+		color: #1e1c1c;
+		font-weight: normal;
+		margin-block-start: 15px;
+		margin-block-end: 15px;}
+	.subtitle {
+		text-align:center;
+		font-family: lucida console;
+		font-size: 20px;
+		color: #1e1c1c;
+		margin-block-start: 25px;
+		}
+
+/*Setting up the navigation bar section*/
+	/* Style the nav bar */
+	.navbar {
+	  overflow: hidden;
+	  background-color: #aac5e0;}
+
+	/* Style the nav bar links */
+	.navbar a {
+		float: left;
+		color: #1e1c1c;
+		display: inline-block;
+		font-family: lucida console;
+		font-size: 20px;
+		padding: 10px;
+		width: 48.4%;
+		text-align: center;
+		text-decoration: none;
+		}
+
+	/* Change color on hover */
+	.navbar a:hover {
+	  background-color: #ffffff;
+	  color: #1e1c1c;
+	}
+
+/* CSS image styling coding template from https://www.w3schools.com/css/css3_images.asp */
+	img.image1 {
+		float:right; 
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 425px;
+		height: 300px;}
+
+/*body text styling adapted from Yoga with Adrienne website https://yogawithadriene.com/adriene-mishler/ */
+	p {
+		font-family: 'acumin-pro', sans-serif;
+		font-size: 18px;
+		font-weight: 200;
+		line-height: 1.625;
+		color:#1e1c1c;
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-block-start: 25px;
+		margin-block-end: 25px;}
+
+h2 {
+	font-family: lucida console;
+	font-size: 24px;
+	font-weight: 900;
+	color: #1e1c1c;
+	margin-block-start: 0.5cm;
+	margin-left: 30px;
+	margin-inline-end: 1px;}
+
+/*Styleing the footer following https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_footer */
+/* Added line breaks in footer following css <span> quidance from https://www.educative.io/edpresso/how-to-add-a-line-break-using-css-->*/
+	.footer {
+	  background-color: #f5f5f5;
+	  padding: 10px;
+	  text-align: center;
+	  color: #1e1c1c;
+	  border-top: 2px solid #8d8741;}
+
+	h3 {
+		font-family: lucida console;
+		font-size: 20px;
+		font-weight: 500;
+		color: #1e1c1c;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-block-start: 15px;
+		margin-block-end: 15px;}
+
+	.foot.text{
+		font-family: lucida console;
+		font-size: 12px;
+		font-weight: 500;
+		color: #1e1c1c;}
+		
+	#footerOR::before{
+		content: "\a";
+		white-space: pre;}	
+		
+	#footerOR::after{
+		content: "\a";
+		white-space: pre;}
+	.footer a{
+		color: #8d8741;
+		display: inline-block;
+		font-family: lucida console;
+		font-size: 12px;
+		text-decoration: none;
+		font-weight: 900}
+		
+/*text styling for Experiences Page */
+	h4 {
+		font-family: 'acumin-pro', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		color: #1e1c1c;
+		margin-left: 30px;
+		margin-bottom: 25px;
+		margin-block-start: 10px;
+		margin-block-end: 10px;}
+	.exptext {
+		font-family: 'acumin-pro', sans-serif;
+		font-size: 18px;
+		font-weight: 200;
+		color: #1e1c1c;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 25px;
+		margin-block-start: 10px;
+		margin-block-end: 20px;}
+		
+/* list formatting adapted from https://www.w3schools.com/css/css_list.asp */	
+	ul.experienceslist {
+	list-style-type: circle;
+	font-family: 'acumin-pro', sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	color: #1e1c1c;
+	margin-left: 10px;
+	margin-right: 30px;
+	margin-block-start: 10px;
+	margin-block-end: 20px;
+	}
 
 </style>
-<!-- The three items I choose to include are: 5 or more images, horizontal navigation bars, 2+ external links -->
 </head>
 
+<div class="pagewidth">
 <body>
-<h1>Experiences</h1>
-<!-- navigation bar to Home Page and Passions Page-->
+<div class="header"> <h1>Experiences</h1>
+<div class="subtitle"> <i>"The future depends on what you do today."</i> - Mahatma Gandhi</div> </div>
 
-<!-- Content for the sections below (education, employment, licenses and skills) was aquired from my personal resume and linked in page-->
+<!-- navigation bar to Experiences Page and Passions Pages with relative links-->
+<div class = "navbar">
+<a href="index.html">About Me</a>
+<a href="page3_passions.html">Passions</a>
+</div>
+
+<!-- Experiences page modeled after my personal CV -->
 <h2>Education</h2>
-<h3>Fleming College</h3>
-	<p>2020 - Present</p>
-	<p>Geographic Information Systems - Applications Specialist</p>
-<h3>Lakehead University</h3>
-	<p>2015 - 2018</p>
-	<p>Honours Bachelour of Environmental Science (Earth Science Major)
-<h3>University of Guelph</h3>
-	<p>2013 - 2014</p>
-	<p>Honours Bachelour of Environmental Geoscience and Geomatics
-	
+	<h4><b>Sep 2020 - Present:</b> Fleming College</h4>
+		<div class="exptext"> Geographic Information Systems Applications Specialist</div>
+	<h4><b>Jan 2015 - April 2018:</b> Lakehead University</h4>
+		<div class="exptext">Honours Bachelor of Environmental Science (Earth Science Major)</div>
+	<h4><b>Sep 2013 - Dec 2014:</b> University of Guelph</h4>
+		<div class="exptext">Honours Bachelor of Environmental Geoscience and Geomatics (Initiated)</div>
+
+
 <h2>Employment</h2>
-<h3>Environmental Scientist, Stantec Consulting Ltd.</h3>
-	<p>May 2018 - Sep 2020</p>
-	<p>Conducted environmental sampling for various domestic, industrial and hazardous waste landfill environmental compliance programs as required by the MECP. Provided technical support for projects including surface water baseline studies, mercury impacted site characterization, soil remediation, and geotechnical investigations. Responsible for project administration/coordination, data quality assurance and control, data interpretation and preparation of technical reports.</p>
-<h3>Geology Research Assistant, Lakehead University Department of Geology</h3>
-	<p>May 2017 - Sep 2017</p>
-	<p>Completed self-directed field and laboratory investigations as a recipient of the Natural Sciences and Engineering Research Council Undergraduate Student Research Award (NSERC-USRA). My honours thesis research project investigated the "Effects of fire, harvest and compound disturbance on soil carbon and nitrogen stores in a boreal mixed wood forest."</p>
-<h3>Geology Research Assistant, Lakehead University Department of Geology</h3>
-	<p>May 2016 - Sep 2016</p>
-	<p>Assisted graduate students with research projects focused on the biogeochemical cycling of soils. The projects involved both field and laboratory investigations. Completed a self-directed independent research project and presentation that explored the physical controls and determined estimates of soil CO2 efflux from rock barren soils of the Boreal shield.</p>
-<h3>Administrative Assistant, Ontario Ministry of Natural Resources and Forestry</h3>
-	<p>May 2015 - Sep 2015</p>
-	<p>May 2014 - Sep 2014</p>
-	<p>Worked closely with resource clerks and technical staff to gain experience in natural resource management. Responsible for reconciling, organizing, updating and filing various documents, spreadsheets and data bases. Provided support for field investigations including the closure of aggregate resource pits and the collection of biological samples.</p>
-<h3>Assistant Resource Technician, Ontario Ministry of Natural Resources and Forestry</h3>
-	<p>June 2013 - Sep 2013</p>
-	<p>Worked closely with resource technicians to gain experience in natural resource management. Completed angler surveys and collected biological samples. Responsible for data management including data collection, quality control, and data entry.</p>
+	<h4> <b>May 2018 - Sep 2020:</b> Environmental Scientist, Stantec Consulting Ltd., Thunder Bay, ON</h4>
+		<div class="exptext"> Conducted annual water quality and hydrogeological assessments for municipal and industrial landfill environmental compliance programs, as required by the Ontario Ministry of the Environment, Conservation and Parks (MECP). Provided technical support for projects including surface water baseline studies, mercury impacted site characterization and remediation, and geotechnical investigations. Completed surface water, soil and landfill gas sampling, as well as subsurface investigations including borehole drilling, monitoring well installation and test pitting. Responsible for the tabulation of field data and laboratory analytical results, data analysis and interpretation, and technical report writing to meet project deliverables. Fulfilled quality assurance and quality control requirements during both field investigations and the preparation of technical reports. Gained knowledge of provincial and federal environmental compliance requirements, in additional to project administration and coordination.</div>
 
-<h2>Licenses</h2>
-	<p>May 2019 - Present</p>
-	<p>Geoscientist-in-Training (GIT), Professional Geoscientists Ontario</p>
-	<p>Credential ID 10796</p>
+	<h4> <b>May 2017 - Sep 2017:</b> Geology Research Assistant, Lakehead University Department of Geology</h4>
+		<div class="exptext">Completed self-directed field and laboratory investigations as a recipient of the Natural Sciences and Engineering Research Council Undergraduate Student Research Award (NSERC-USRA). Completed a thesis titled - <i>Effects of fire, harvest and compound disturbance on soil carbon and nitrogen stores in a boreal mixedwood forest </i> under the supervision of Dr. Amanda Diochon." Furthered my understanding of biogeochemical cycling of soils and gained practical experience planning and implementing soil sampling and related field activities.Processed soil samples in the laboratory (e.g., physical fractionation, sieving, ball mill grinding) and conducted analyses on soil samples (e.g., pH, sequential extractions). Developed critical thinking skills through data management and statistical analyses and dvanced my technical writing abilities.</div>
 
-<h2>Skills</h2>
-<p>Environmental Geology, Technical Writing, Field Work, Environmental Services, Leadership, Oganizational Skills</p>
+	<h4> <b>May 2016 - Sep 2016:</b> Geology Research Assistant, Lakehead University Department of Geology</h4>
+		<div class="exptext">Worked alongside Graduate students on various research projects focused on the biogeochemical cycling of soils. Assisted with soil sampling, vegetation surveys and soil respiration studies. Developed laboratory techniques used in conducting soil analysis (e.g., microbial biomass extraction, bulk density, physical fractionation) and gained experience using, calibrating and maintaining field/laboratory equipment. Collected data for the Lakehead Univeristy Undergraduate Student Research Conference poster titled - <i> Soil CO2 efflux from rock barren soils: estimates and physical controls </i> under the supervision of Dr. Amanda Diochon.</div>
 
+	<h4><b>May 2015 - Sep 2015; May 2014 - Sep 2014:</b> Administrative Assistant, Ontario Ministry of Natural Resources and Forestry, Nipigon District</h4>
+		<div class="exptext">Worked closely with resource clerks and technical staff to gain experience in natural resource management. Responsible for reconciling, organizing, updating and filing various documents, spreadsheets and databases (e.g., Bills-of-Lading, Daily Catch Reports, Land Use Permits). Acted as recording secretary at internal and client meetings and provided support for field investigations including the closure of aggregate resource pits and the collection of biological samples.</div>
 
-</body>
+	<h4><b>June 2013 - Sep 2013:</b> Assistant Resource Technician, Ontario Ministry of Natural Resources and Forestry, Nipigon District</h4>
+		<div class="exptext">Worked closely with resource technicians to gain experience in natural resource management. Completed angler surveys and collected biological samples. Responsible for data management including data collection, quality control, and data entry.</div>
+
+<h2>Acheivements</h2>
+<ul class="experienceslist">
+	<li>Cumulative GPA of 91.8% at Lakehead University.</li>
+	<li>Natural Sciences and Engineering Research Council Undergraduate Student Research Award (NSERC-USRA) – Lakehead University, Spring/Summer 2017.</li>
+	<li>The Gloria M. and Lewis N. Legrow Bursary - Lakehead University, 2016/2017.</li>
+	<li>The William and Dorothy Hyndman Award - Lakehead University, 2015/16.</li>
+	<li>Northern Lake Superior Field Course Award I - Lakehead University, 2015/16.
+	<li>Recognized on Lakehead University’s Dean’s List for the 2015/16 and 2016/17 academic years.</li>
+	<li>Cumulative GPA of 86.1% at the University of Guelph over three semesters.</li>
+	<li>College of Social and Applied Human Sciences Dean’s Honours List for the 2013/14 academic year, and the Fall 2014 semester at the University of Guelph.</li>
+	<li>Governor General’s Bronze Medal for the highest overall average in Nipigon-Red Rock District High School’s graduating class of 2013.</li>
+</ul>
+
+<h2>Relevent Activities</h2>
+<ul class="experienceslist">
+	<li>Professional Geoscientists of Ontario (PGO) registered geoscientist in-training (G.I.T.) member (Member #: 10796). </li>
+	<li>Outdoor activities (e.g., fishing, hiking, camping, snowmobiling, skiing, gardening).</li>
+</ul>
+	
+<h2>Skills and Training</h2>
+<ul class="experienceslist">
+	<li>Technical report writing</li>
+	<li>Environmental Geoscience laboratory and field procedures, and QA/QC protocols</li>
+	<li>Experience with Microsoft software, ArcGIS, e-mail management, and social media communication</li>
+	<li>Ontario Driver’s License (Class G) and Pleasure Craft Operator Card</li>
+	<li>Canada Safety Council – ATV Training</li>
+	<li>St. John Ambulance – Emergency First Aid Level A CPR/AED</li>
+	<li>Bear-wise – OMNRF</li>
+	<li>Attentive, self-motivated, and dedicated</li>
+	<li>Punctual, organized, and detail oriented</li>
+	<li>Sociable, athletic, and hard working</li>
+</ul>
+
+<div class="footer">
+	<h3>Contact</h3>
+	<div class="foot text">Connect with me on <a href ="https://www.linkedin.com/in/carina-leale42860/">LinkedIn</a>
+	<span id="footerOR"> OR </span> email me at: carina.leale@flemingcollege.ca </div> 
+</div>
+
+</body> 
+</div>
 </html>
