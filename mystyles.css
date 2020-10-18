@@ -15,7 +15,7 @@
 /*Setting up the header section with subtitle, adapted from: https://www.w3schools.com/css/css_website_layout.asp*/
 	.header {
 		padding: 30px;
-		background-color: #daad86;
+		background-color: #aac5e0;
 		border-top: 2px #1e1c1c solid;
 		border-bottom: 2px #1e1c1c solid;}
 	h1 {
@@ -34,7 +34,7 @@
 	/* Style the nav bar */
 	.navbar {
 	  overflow: hidden;
-	  background-color: #aac5e0;}
+	  background-color: #daad86;}
 
 	/* Style the nav bar links */
 	.navbar a {
@@ -51,7 +51,7 @@
 	/* Change color on hover */
 	.navbar a:hover {
 	  background-color: #1e1c1c;
-	  color:#aac5e0;}
+	  color:#daad86;}
 
 /*CSS image styling coding adapted from: https://www.w3schools.com/css/css3_images.asp*/
 	img.image1 {
@@ -167,3 +167,4 @@
 	.fling-minislide img:nth-child(3){animation-delay:15s;}
 	.fling-minislide img:nth-child(2){animation-delay:20s;}
 	.fling-minislide img:nth-child(1){animation-delay:25s;}
+
